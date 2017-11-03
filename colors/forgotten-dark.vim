@@ -89,9 +89,9 @@ let colors_name = 'forgotten-dark'
 " highlighting function
 fun! <sid>h(x, gf, gb, cf, cb, a, s)
   if a:gf != '' | exe 'hi ' . a:x . ' guifg=#'  . a:gf                  | endif
-  if a:gb != '' | exe 'hi ' . a:x . ' guibg=#'  . a:gb                  | endif
+"  if a:gb != '' | exe 'hi ' . a:x . ' guibg=#'  . a:gb                  | endif
   if a:cf != '' | exe 'hi ' . a:x . ' ctermfg=' . a:cf                  | endif
-  if a:cb != '' | exe 'hi ' . a:x . ' ctermbg=' . a:cb                  | endif
+"  if a:cb != '' | exe 'hi ' . a:x . ' ctermbg=' . a:cb                  | endif
   if a:a  != '' | exe 'hi ' . a:x . ' gui='     . a:a . ' cterm=' . a:a | endif
   if a:s  != '' | exe 'hi ' . a:x . ' guisp=#'  . a:s                   | endif
 endfun
